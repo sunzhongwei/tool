@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app>
+
+<head>
+  <meta charset="utf-8">
+  <title>ed2k 乱码转换</title>
+  <script type="text/javascript" src="js/angular-1.0.8.min.js"></script>
+  <script type="text/javascript" src="js/ed2k.js"></script>
+</head>
+
+<body ng-controller="Ed2kCtrl">
+  <h1>ed2k 乱码转换</h1>
+  <div>
+    <p>输入原始 ed2k</p>
+    <textarea name="" rows="10" cols="60" ng-model="orgInput"></textarea>
+    <p>
+      <button ng-click="convert()">转换</button>
+    </p>
+  </div>
+  <div>
+    <p>转码后</p>
+    <span>{{ result }}</span>
+  </div>
+</body>
+
+</html>
+
+
